@@ -1,0 +1,326 @@
+:root {
+  --backgorund: rgba(14, 14, 14, 1);
+  --colorStyle: #ffc107;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgorund);
+  overflow-x: hidden;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  color: var(--colorStyle);
+}
+
+main {
+  margin: 0 auto;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.style-bg {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  right: -600px;
+  z-index: -1;
+  top: -234px;
+  border-radius: 100%;
+  background: linear-gradient(2deg, #0a0a0a 13.42%, #1c1c1c 50%);
+}
+.style-bg2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -200px;
+  z-index: -1;
+  margin-top: 250px;
+  border-radius: 100%;
+  background: linear-gradient(2deg, #0a0a0a 13.42%, #1c1c1c 50%);
+}
+
+.style-bg3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -300px;
+  z-index: -1;
+  top: 634px;
+  border-radius: 100%;
+  background: linear-gradient(2deg, #0a0a0a 13.42%, #1c1c1c 50%);
+}
+.input_section {
+  width: 50%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: var(--colorStyle);
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: var(--colorStyle);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+.input_section > form > button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section form .input label {
+  color: var(--colorStyle);
+  font-weight: bold;
+}
+.input_section form .input input {
+  margin: 20px 0px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  color: white;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: var(--colorStyle);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.bookShelf {
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  border-radius: 10px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1360px;
+
+  display: flex;
+  padding: 20px 0px 50px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.bookShelf header {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.bookShelf header > h2 {
+  color: var(--colorStyle);
+  margin-bottom: 10px;
+}
+
+.bookShelf header > form {
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.bookShelf header > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.bookShelf header > form > input {
+  padding: 8px;
+  width: 80%;
+  border-radius: 5px;
+  margin-left: -15px;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+}
+
+.bookShelf header > form > button {
+  background-color: var(--colorStyle);
+  color: white;
+  width: 30%;
+  height: 45px;
+  font-weight: bold;
+  margin-right: -16px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.bookShelf header > form > button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.bookShelf footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 500px;
+}
+
+.book_shelf > h2 {
+  color: var(--colorStyle);
+}
+
+.book_shelf > .book_list {
+  padding: 20px 0px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  border-radius: 5px;
+  margin: 10px 0;
+  color: whitesmoke;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+}
+.book_shelf > .book_list > .book_item > .action > .blue {
+  background-color: rgb(23, 23, 255);
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+}
+.book_shelf > .book_list > .book_item > .action > .green,
+.book_shelf > .book_list > .book_item > .action > .blue,
+.book_shelf > .book_list > .book_item > .action > .red {
+  color: white;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.book_shelf > .book_list > .book_item > .action > .green:hover,
+.book_shelf > .book_list > .book_item > .action > .blue:hover,
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.footer {
+  width: 100vw;
+  background-color: #1c1c1c;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 14px;
+  margin: auto;
+  max-width: 1360px;
+}
+
+@media screen and (max-width: 1068px) {
+  .book_shelf {
+    min-width: inherit;
+  }
+  .bookShelf header {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 712px) {
+  .input_section {
+    width: 100%;
+  }
+  .book_shelf {
+    min-width: inherit;
+  }
+  .bookShelf footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .bookShelf header {
+    width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1 class="head_bar__title">Book Shelf</h1>
+    </header>
+    <span class="style-bg"></span>
+    <span class="style-bg2"></span>
+    <span class="style-bg3"></span>
+
+    <main>
+      <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form name="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input name="inputBookTitle" type="text" id="inputBookTitle" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input name="inputBookAuthor" type="text" id="inputBookAuthor" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input name="inputBookYear" type="number" required />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input name="inputBookIsComplete" type="checkbox" />
+          </div>
+          <button name="bookSubmit" type="submit">Masukkan Buku ke rak</button>
+        </form>
+      </section>
+
+      <section class="bookShelf">
+        <header>
+          <h2>Cari Buku</h2>
+          <form name="searchBook">
+            <input id="searchBookTitle" type="text" />
+            <button id="searchSubmit" type="submit">Cari</button>
+          </form>
+        </header>
+
+        <footer>
+          <div class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+
+            <div id="incompleteBookshelfList" class="book_list">
+            </div>
+          </div>
+
+          <div class="book_shelf">
+            <h2>Selesai dibaca</h2>
+
+            <div id="completeBookshelfList" class="book_list">
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Musthofa Ilmi &copy;2023,My Project | Todo Apps Book Shelf</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
